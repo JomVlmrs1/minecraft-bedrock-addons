@@ -11,26 +11,61 @@
         <div class="logo">
             <img src="logo.png" alt="Bedrock Addons Hub Logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="download.html">Downloads</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <section class="content">
         <h2>Explore and Download Addons</h2>
-        <p>Here you can find and download various addons and resource packs for Minecraft Bedrock Edition.</p>
-        <ul>
-            <li><a href="#">Addon 1</a></li>
-            <li><a href="#">Addon 2</a></li>
-            <li><a href="#">Addon 3</a></li>
-            <!-- Add more addon links as needed -->
-        </ul>
+
+        <!-- Category Buttons -->
+        <div class="category-buttons">
+            <button onclick="showAddons()">Addons</button>
+            <button onclick="showResourcePacks()">Resource Packs</button>
+        </div>
+
+        <!-- Addon Templates -->
+        <div class="addon" onclick="goToAddonPage('addon1')">
+            <img src="addon_logo.png" alt="Addon 1 Logo">
+            <div class="addon-info">
+                <h3>Addon Name 1</h3>
+                <p><strong>Date Released:</strong> July 1, 2024</p>
+                <p>Description of the addon goes here.</p>
+            </div>
+        </div>
+
+        <div class="addon" onclick="goToAddonPage('addon2')">
+            <img src="addon_logo.png" alt="Addon 2 Logo">
+            <div class="addon-info">
+                <h3>Addon Name 2</h3>
+                <p><strong>Date Released:</strong> July 2, 2024</p>
+                <p>Description of the addon goes here.</p>
+            </div>
+        </div>
+
+        <!-- Return to Top Button -->
+        <button onclick="scrollToTop()">Back to Top</button>
     </section>
     <footer>
         <p>&copy; 2024 Bedrock Addons Hub. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript for category buttons and navigation -->
+    <script>
+        function showAddons() {
+            // Logic to show addons
+        }
+
+        function showResourcePacks() {
+            // Logic to show resource packs
+        }
+
+        function goToAddonPage(addonId) {
+            // Redirect to addon detail page with addonId
+            window.location.href = `addon${addonId}.html`;
+        }
+
+        function scrollToTop() {
+            // Scrolls the page to the top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>

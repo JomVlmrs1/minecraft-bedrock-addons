@@ -1,1 +1,1 @@
-# minecraft-bedrock-addons
+# Minecraft Bedrock Addons
